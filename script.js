@@ -34,17 +34,33 @@ function Brown() {
         resetTheme();
     } else {
         document.body.style.backgroundColor = "#654520";
-        document.body.style.color = "white";
+        document.body.style.color = "white"; 
         document.body.style.fontFamily = "'Georgia', serif";
-        updateImage("images/oldie.jpg"); 
+        document.body.style.fontSize = "25px";
+        
+        document.querySelector('h1').style.fontSize = "600%"; 
+        document.querySelector('p').style.fontSize = "40px"; 
+        document.querySelector('h1').style.top = "-50px";
+
+
+        const imgElement = document.querySelector("img");
+        imgElement.style.width = "700px"; 
+        imgElement.style.height = "450px"; 
+        imgElement.style.right = "75px";
+        imgElement.style.top = "200px"; 
+
+        updateImage("images/oldie.jpg");    
         currentTheme = "brown";
     }
 }
 
 function resetTheme() {
-    document.body.style.backgroundColor = "#A1D6B2";
-    document.body.style.color = "black";
+    document.body.style.backgroundColor = "#A1D6B2"; 
+    document.body.style.color = "black"; 
     document.body.style.fontFamily = "default";
-    updateImage("images/wc.jpg"); 
+    document.body.style.fontSize = "16px";
+    
+  
+    updateImage("images/wc.jpg");
     currentTheme = "main";
 }
